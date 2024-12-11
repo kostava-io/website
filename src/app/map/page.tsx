@@ -14,7 +14,7 @@ import { LiveFeed } from "./components/live-feed";
 import data from "./mockdata.json";
 
 export default function Live(): JSX.Element {
-  const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+  const mapboxToken = process.env.MAPBOX_ACCESS_TOKEN;
   const theme = useTheme();
   const [selectedNotification, setSelectedNotification] = useState<
     number | null
