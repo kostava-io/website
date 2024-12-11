@@ -1,0 +1,50 @@
+{
+  "home": {
+    "title": "KOSTAVA"
+  },
+  "header": {
+    "title": "KOSTAVA",
+    "home": "Home",
+    "about": "About",
+    "robocops": "Robocops",
+    "prisoners": "Prisoners",
+    "map": "Map"
+  },
+  "about": {
+    "title": "About",
+    "content": "In Georgia, we face a critical moment in our history. Our government, influenced and managed by external forces like the KGB, threatens the sovereignty, freedom, and democratic values that generations of Georgians have fought to protect. We believe in the power of the people to rise against illegitimate governance, and we are committed to developing a national movement to restore justice, democracy, and independence in Georgia."
+  },
+  "map": {
+    "title": "Map",
+    "feed": "Feed"
+  },
+  "prisoners": {
+    "search": "Search",
+    "no_data": "No data",
+    "view": "View",
+    "reset": "Reset",
+    "toggle-columns": "Columns",
+    "full_name": "Full name",
+    "location": "Location",
+    "last_update": "Last update",
+    "image_url": "Image",
+    "number": "Number"
+  },
+  "robocops": {
+    "search": "Search",
+    "no_data": "No data",
+    "view": "View",
+    "reset": "Reset",
+    "toggle-columns": "Columns",
+    "full_name": "Full name",
+    "image_url": "Image",
+    "birth_date": "Birth date",
+    "address": "Address",
+    "personal_number": "P/N"
+  },
+  "locale": {
+    "ka": "ქართული",
+    "en": "English",
+    "label": "Language"
+  }
+}
