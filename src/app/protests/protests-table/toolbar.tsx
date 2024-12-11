@@ -1,13 +1,13 @@
 import { Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
-import { DataTableViewOptions } from "@/components/customs/DataTableViewOptions";
+import { ToolbarView } from "./toolbar-view";
 import { useTranslations } from "next-intl";
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
 }
 
-export function RobocopsToolbar<TData>({
+export function PrisonersToolbar<TData>({
   table,
 }: DataTableToolbarProps<TData>) {
   const t = useTranslations();
@@ -17,18 +17,18 @@ export function RobocopsToolbar<TData>({
       <div className="flex flex-1 items-center space-x-2">
         <Input
           type="search"
-          placeholder={t("robocops.search")}
+          placeholder={t("protests.search")}
           value={
-            (table.getColumn("full_name")?.getFilterValue() as string) ?? ""
+            (table.getColumn("protest_title")?.getFilterValue() as string) ?? ""
           }
           onChange={(event) =>
-            table.getColumn("full_name")?.setFilterValue(event.target.value)
+            table.getColumn("protest_title")?.setFilterValue(event.target.value)
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
       </div>
       <div className="space-x-2 flex">
-        <DataTableViewOptions table={table} />
+        <ToolbarView table={table} />
       </div>
     </div>
   );

@@ -1,10 +1,9 @@
-export type TDB_Schema = {
-  robocops: {
-    full_name: string;
-    created_at: string;
-    rank?: string;
-    birth_date?: string;
-    image_url?: string;
-    department?: string;
+export type Protests_DB_Schema = {
+  protests: {
+    protest_date: any;
+    protest_location: any;
+    protest_location_url: any;
+    protest_source: any;
+    protest_title: any;
   };
 };

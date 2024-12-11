@@ -8,6 +8,7 @@
     "about": "ჩვენს შესახებ",
     "robocops": "რობოკოპები",
     "prisoners": "პატიმრები",
+    "protests": "აქციები",
     "map": "რუკა"
   },
   "about": {
@@ -18,8 +19,20 @@
     "title": "რუკა",
     "feed": "სტატუსი"
   },
+  "protests": {
+    "search": "ძიება...",
+    "no_data": "მონაცემები არ არის",
+    "view": "ფილტრი",
+    "reset": "განულება",
+    "toggle-columns": "სვეტების ჩართვა/გამორთვა",
+    "protest_date": "თარიღი",
+    "protest_time": "დრო",
+    "protest_location": "ლოკაცია",
+    "protest_title": "სათაური",
+    "protest_source": "წყარო"
+  },
   "prisoners": {
-    "search": "ძებნა...",
+    "search": "ძიება...",
     "no_data": "მონაცემები არ არის",
     "view": "ფილტრი",
     "reset": "განულება",
@@ -30,17 +43,11 @@
     "image_url": "სურათი",
     "number": "ნომერი"
   },
-  "robocops": {
-    "search": "ძებნა...",
+  "table": {
+    "search": "ძიება...",
     "no_data": "მონაცემები არ არის",
     "view": "ფილტრი",
-    "reset": "განულება",
-    "toggle-columns": "სვეტების ჩართვა/გამორთვა",
-    "full_name": "სრული სახელი",
-    "image_url": "სურათი",
-    "birth_date": "დაბადების თარიღი",
-    "address": "მისამართი",
-    "personal_number": "პ/ნ"
+    "reset": "განულება"
   },
   "locale": {
     "ka": "ქართული",

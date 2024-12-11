@@ -6,8 +6,8 @@
     "title": "KOSTAVA",
     "home": "Home",
     "about": "About",
-    "robocops": "Robocops",
     "prisoners": "Prisoners",
+    "protests": "Protests",
     "map": "Map"
   },
   "about": {
@@ -17,6 +17,18 @@
   "map": {
     "title": "Map",
     "feed": "Feed"
+  },
+  "protests": {
+    "search": "Search",
+    "no_data": "No data",
+    "view": "View",
+    "reset": "Reset",
+    "toggle-columns": "Columns",
+    "protest_date": "Date",
+    "protest_time": "Time",
+    "protest_location": "Location",
+    "protest_title": "Title",
+    "protest_source": "Source"
   },
   "prisoners": {
     "search": "Search",
@@ -29,18 +41,6 @@
     "last_update": "Last update",
     "image_url": "Image",
     "number": "Number"
-  },
-  "robocops": {
-    "search": "Search",
-    "no_data": "No data",
-    "view": "View",
-    "reset": "Reset",
-    "toggle-columns": "Columns",
-    "full_name": "Full name",
-    "image_url": "Image",
-    "birth_date": "Birth date",
-    "address": "Address",
-    "personal_number": "P/N"
   },
   "locale": {
     "ka": "ქართული",

@@ -79,7 +79,7 @@ export function Header() {
     { title: t("header.about"), href: "/about" },
     { title: t("header.map"), href: "/map" },
     { title: t("header.prisoners"), href: "/prisoners" },
-    { title: t("header.robocops"), href: "/robocops" },
+    { title: t("header.protests"), href: "/protests" },
   ];
   return (
     <header className="flex flex-row justify-between px-4 py-2">

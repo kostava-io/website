@@ -1,7 +1,7 @@
 import { Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
-import { DataTableViewOptions } from "@/components/customs/DataTableViewOptions";
 import { useTranslations } from "next-intl";
+import { ToolbarView } from "./toolbar-view";
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
@@ -17,7 +17,7 @@ export function PrisonersToolbar<TData>({
       <div className="flex flex-1 items-center space-x-2">
         <Input
           type="search"
-          placeholder={t("robocops.search")}
+          placeholder={t("prisoners.search")}
           value={
             (table.getColumn("full_name")?.getFilterValue() as string) ?? ""
           }
@@ -28,7 +28,7 @@ export function PrisonersToolbar<TData>({
         />
       </div>
       <div className="space-x-2 flex">
-        <DataTableViewOptions table={table} />
+        <ToolbarView table={table} />
       </div>
     </div>
   );

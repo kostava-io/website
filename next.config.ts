@@ -5,6 +5,7 @@ const nextConfig = {
   env: {
     MAPBOX_ACCESS_TOKEN: process.env.MAPBOX_ACCESS_TOKEN,
     DB_APP_ID: process.env.DB_APP_ID,
+    PROTESTS_DB_APP_ID: process.env.PROTESTS_DB_APP_ID,
   },
 };
 module.exports = withNextIntl(nextConfig);

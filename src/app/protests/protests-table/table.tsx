@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { db } from "@/providers/data-provider";
+import { protests_db } from "@/providers/protests-data-provider";
 
 import {
   Table,
@@ -21,21 +21,21 @@ import {
   getFilteredRowModel,
   getFacetedUniqueValues,
 } from "@tanstack/react-table";
-import { RobocopsToolbar } from "./toolbar";
+import { PrisonersToolbar } from "./toolbar";
 import { useColumns } from "./columns";
 import { useTranslations } from "next-intl";
 // import { useVirtualizer } from "@tanstack/react-virtual";
 
-export function RobocopsTable() {
+export function ProtestsTable() {
   const t = useTranslations();
-  const { data } = db.useQuery({ robocops: {} });
+  const { data } = protests_db.useQuery({ protests: {} });
   const columns = useColumns();
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
 
   const table = useReactTable({
     columns: columns,
-    data: data?.robocops ?? [],
+    data: data?.protests ?? [],
     state: {
       columnFilters,
       columnVisibility,
@@ -65,7 +65,7 @@ export function RobocopsTable() {
 
   return (
     <div className="px-4 w-full h-full">
-      <RobocopsToolbar table={table} />
+      <PrisonersToolbar table={table} />
       <div ref={tableContainerRef} className="rounded-md border mt-2">
         <Table>
           <TableHeader>
@@ -109,7 +109,7 @@ export function RobocopsTable() {
                   colSpan={columns.length}
                   className="h-24 text-center"
                 >
-                  {t("robocops.no_data")}
+                  {t("protests.no_data")}
                 </TableCell>
               </TableRow>
             )}

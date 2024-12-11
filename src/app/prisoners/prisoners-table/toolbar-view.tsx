@@ -12,13 +12,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 
-interface DataTableViewOptionsProps<TData> {
+interface ToolbarViewProps<TData> {
   table: Table<TData>;
 }
 
-export function DataTableViewOptions<TData>({
-  table,
-}: DataTableViewOptionsProps<TData>) {
+export function ToolbarView<TData>({ table }: ToolbarViewProps<TData>) {
   const t = useTranslations();
   return (
     <DropdownMenu>
@@ -29,11 +27,11 @@ export function DataTableViewOptions<TData>({
           className="ml-auto hidden h-8 lg:flex"
         >
           <MixerHorizontalIcon className="mr-2 h-4 w-4" />
-          {t("robocops.view")}
+          {t("prisoners.view")}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuLabel>{t("robocops.toggle-columns")}</DropdownMenuLabel>
+        <DropdownMenuLabel>{t("prisoners.toggle-columns")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {table
           .getAllColumns()
@@ -49,7 +47,7 @@ export function DataTableViewOptions<TData>({
                 checked={column.getIsVisible()}
                 onCheckedChange={(value) => column.toggleVisibility(!!value)}
               >
-                {t("robocops." + column.id)}
+                {t("prisoners." + column.id)}
               </DropdownMenuCheckboxItem>
             );
           })}
