@@ -109,7 +109,7 @@ export function PrisonersTable() {
                   colSpan={columns.length}
                   className="h-24 text-center"
                 >
-                  {t("robocops.no_data")}
+                  {t("protests.no_data")}
                 </TableCell>
               </TableRow>
             )}
